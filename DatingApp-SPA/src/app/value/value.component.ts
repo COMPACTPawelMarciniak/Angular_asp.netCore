@@ -10,7 +10,7 @@ export class ValueComponent implements OnInit {
 
   values: any;
 
-  d
+  
   constructor(private http: HttpClient) {
    }
 
