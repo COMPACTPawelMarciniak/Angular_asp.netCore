@@ -10,6 +10,7 @@ export class AuthService {
 
   baseUrl = 'http://localhost:5000/api/authorization/';
 
+
 constructor(private http: HttpClient) { }
 
 login(model: any){
@@ -21,5 +22,9 @@ login(model: any){
       }
     })
   );
+}
+
+register(model: any){
+  return this.http.post('http://localhost:5000/api/authorization/Register', model);
 }
 }
